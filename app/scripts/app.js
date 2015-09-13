@@ -8,6 +8,14 @@ blocItOff.config(['$stateProvider', '$locationProvider', function($stateProvider
 	})
 }])
 
-blocItOff.controller('Home.controller', ['$scope', function($scope) {
-	
+blocItOff.controller('Home.controller', ['$scope', 'List', function($scope, List) {
+
+}])
+
+blocItOff.factory('List', ['$firebaseArray', function($firebaseArray) {
+	var ref = new Firebase('https://torching-sun-5361.firebaseio.com/');
+	var listItems = $firebaseArray(ref.child('list items'));
+	return {
+
+	}
 }])

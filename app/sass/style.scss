@@ -22,3 +22,35 @@ body {
 	position: relative;
 	font-weight: bold;
 }
+
+#listHeader {
+	background-color: #F0BF00;
+	text-align: center;
+	width: 50%;
+	position: absolute;
+	top: 25%;
+	left: 25%;
+	font-family: "Tahoma";
+	color: #3B0160;
+	font-weight: 400;
+	text-shadow: 1px 1px white;
+	border-style: outset;
+	border-color: white;
+	font-size: 30px;
+}
+
+#toDoList {
+	background-color: white;
+	color: #3B0160;
+	font-family: "Tahoma";
+	width: 50%;
+	position: absolute;
+	top: 45%;
+	left: 25%;
+	border-color: #F0BF00;
+	border-style: outset;
+	text-align: center;
+	list-style-type: none;
+	font-size: 25px;
+	text-shadow: 1px 1px #F0BF00;
+}

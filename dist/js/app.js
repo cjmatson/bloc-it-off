@@ -9,7 +9,18 @@ blocItOff.config(['$stateProvider', '$locationProvider', function($stateProvider
 }])
 
 blocItOff.controller('Home.controller', ['$scope', 'List', function($scope, List) {
-	$scope.listItems = { items: [{task: "Wake up"}, {task: "Do stuff"}, {task: "Go to bed"}] };
+	$scope.listItems = {items: [{task: "Wake up"}, {task: "Do stuff"}, {task: "Go to bed"}]};
+	$scope.oldListItems = {items: [{task: "Eat breakfast"}, {task: "Eat lunch"}, {task: "Eat dinner"}]};
+	$scope.oldTasks = false;
+	$scope.currentTasks = true;
+	$scope.switchLists = function() {
+		$scope.oldTasks = true;
+		$scope.currentTasks = false;
+	}
+	$scope.backToCurrent = function() {
+		$scope.currentTasks = true;
+		$scope.oldTasks = false;
+	}
 }])
 
 blocItOff.factory('List', ['$firebaseArray', function($firebaseArray) {

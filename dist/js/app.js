@@ -8,7 +8,7 @@ blocItOff.config(['$stateProvider', '$locationProvider', function($stateProvider
 		templateUrl: 'templates/current.html'
 	})
 	$stateProvider.state('add', {
-		url: 'add/',
+		url: '/add',
 		controller: 'Add.controller',
 		templateUrl: 'templates/add.html'
 	})
@@ -24,10 +24,6 @@ blocItOff.config(['$stateProvider', '$locationProvider', function($stateProvider
 	})
 }])
 
-blocItOff.controller('Home.controller', ['$scope', function($scope) {
-	
-}])
-
 blocItOff.controller('Current.controller', ['$scope', function($scope) {
 
 }])
@@ -39,3 +35,9 @@ blocItOff.controller('Add.controller', ['$scope', function($scope) {
 blocItOff.controller('History.controller', ['$scope', function($scope) {
 
 }])
+
+blocItOff.controller('Home.controller', ['$scope', function($scope) {
+
+}])
+
+

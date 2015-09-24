@@ -12,14 +12,79 @@ body {
 	background-color: #3B0160;
 	line-height: 60px;
 	color: #F0BF00;
-	font-weight: 400;
+	font-weight: bold;
 	font-size: 50px;
 	font-family: "Tahoma";
 	border-style: outset;
 	text-shadow: 2px 2px white;
 	border-color: #F0BF00;
 	letter-spacing: 6px;
-	position: relative;
 	font-weight: bold;
 }
 
+#homeHeader {
+	font-family: "Tahoma";
+	color: #F0BF00;
+	text-shadow: 1px 1px white;
+	font-size: 50px;
+	position: absolute;
+	top: 15%;
+	left: 32%;
+}
+
+#addHeader {
+	font-family: "Tahoma";
+	color: #F0BF00;
+	text-shadow: 1px 1px white;
+	font-size: 50px;
+	position: absolute;
+	top: 15%;
+	left: 40%;
+}
+
+#currentHeader {
+	font-family: "Tahoma";
+	color: #F0BF00;
+	text-shadow: 1px 1px white;
+	font-size: 50px;
+	position: absolute;
+	top: 15%;
+	left: 37%;
+}
+
+#historyHeader {
+	font-family: "Tahoma";
+	color: #F0BF00;
+	text-shadow: 1px 1px white;
+	font-size: 50px;
+	position: absolute;
+	top: 15%;
+	left: 39%;
+}
+
+.menu-container {
+	font-family: "Tahoma";
+	text-shadow: 1px 1px #3B0160;
+	font-size: 35px;
+	cursor: pointer;
+	background: #F0BF00;
+	border-style: outset;
+	border-color: white;
+	position: absolute;
+	top: 30%;
+	left: 35%;
+	text-align: center;
+	margin-top: 20px;
+}
+
+#addTasks {
+	color: white;
+}
+
+#currentTasks {
+	color: white;
+}
+
+#taskHistory {
+	color: white;
+}

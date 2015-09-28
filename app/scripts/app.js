@@ -28,7 +28,20 @@ blocItOff.controller('Current.controller', ['$scope', function($scope) {
 
 }])
 
-blocItOff.controller('Add.controller', ['$scope', function($scope) {
+blocItOff.controller('Add.controller', ['$scope', '$firebaseArray', function($scope, $firebaseArray) {
+var ref = new Firebase('https://torching-sun-5361.firebaseio.com/');
+$scope.tasks = $firebaseArray(ref.child('tasks'));
+$scope.addTask = function() {
+	if ($scope.newTask && $scope.setPriority) {
+		$scope.task = {task: $scope.newTask, priority: $scope.setPriority, status: 'active'};
+		$scope.tasks.$add($scope.task);
+		$scope.clearTask();
+	}
+}
+$scope.clearTask = function() {
+	$scope.newTask = "";
+	$scope.setPriority = "";
+}
 
 }])
 

@@ -62,7 +62,7 @@ body {
 	left: 39%;
 }
 
-.menu-container {
+.menuContainer {
 	font-family: "Tahoma";
 	text-shadow: 1px 1px #3B0160;
 	font-size: 35px;
@@ -87,4 +87,136 @@ body {
 
 #taskHistory {
 	color: white;
+}
+
+#addTasksHeader {
+	font-family: "Tahoma";
+	color: white;
+	background: #3B0160;
+	border-style: outset;
+	border-color: #F0BF00;
+	text-align: center;
+	text-shadow: 1px 1px #F0BF00;
+	position: absolute;
+	top: 30%;
+	left: 0%;
+	width: 25%;
+	font-size: 20px;
+}
+
+#addTasksPriorityHeader {
+	font-family: "Tahoma";
+	color: white;
+	background: #3B0160;
+	border-style: outset;
+	border-color: #F0BF00;
+	text-align: center;
+	text-shadow: 1px 1px #F0BF00;
+	position: absolute;
+	top: 30%;
+	left: 37.5%;
+	width: 25%;
+	font-size: 20px;
+}
+
+#addTasksStatusHeader {
+	font-family: "Tahoma";
+	color: white;
+	background: #3B0160;
+	border-style: outset;
+	border-color: #F0BF00;
+	text-align: center;
+	text-shadow: 1px 1px #F0BF00;
+	position: absolute;
+	top: 30%;
+	right: 0%;
+	width: 25%;
+	font-size: 20px;
+}
+
+#addTasksList {
+	font-family: "Tahoma";
+	position: absolute;
+	top: 40%;
+	left: 10%;
+	color: white;
+	font-size: 18px;
+	text-shadow: 0.5px 0.5px #F0BF00;
+}
+
+#addTasksPriorityList {
+	font-family: "Tahoma";
+	position: absolute;
+	top: 40%;
+	left: 47%;
+	color: white;
+	font-size: 18px;
+	text-shadow: 0.5px 0.5px #F0BF00;
+}
+
+#addTasksStatusList {
+	font-family: "Tahoma";
+	position: absolute;
+	top: 40%;
+	left: 84.5%;
+	color: white;
+	font-size: 18px;
+	text-shadow: 0.5px 0.5px #F0BF00;
+}
+
+#addTasksNav {
+	text-align: center;
+}
+
+#addTasksHomeLink {
+	color: #F0BF00;
+	font-family: "Tahoma";
+	font-size: 20px;
+	text-shadow: 0.5px 0.5px white;
+}
+
+#addTasksCurrentLink {
+	color: #F0BF00;
+	font-family: "Tahoma";
+	font-size: 20px;
+	text-shadow: 0.5px 0.5px white;
+}
+
+#addTasksHistoryLink {
+	color: #F0BF00;
+	font-family: "Tahoma";
+	font-size: 20px;
+	text-shadow: 0.5px 0.5px white;
+}
+
+#addTaskSubmitButton {
+	border-color: #F0BF00;
+	background: white;
+	font-family: "Tahoma";
+	border-style: outset;
+	color: #3B0160;
+	text-shadow: 0.5px 0.5px #F0BF00;
+	position: absolute;
+	bottom: 5%;
+	left: 52%;
+}
+
+#addTaskInput {
+	font-family: 'Tahoma';
+	color: #3B0160;
+	text-shadow: 0.5px 0.5px #F0BF00;
+	position: absolute;
+	bottom: 5%;
+	left: 0%;
+	width: 25%;
+}
+
+#addTaskPriorityInput {
+	font-family: 'Tahoma';
+	color: #3B0160;
+	text-shadow: 0.5px 0.5px #F0BF00;
+	position: absolute; 
+	bottom: 5%;
+	left: 26%;
+	width: 25%;
 }

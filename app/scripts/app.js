@@ -43,6 +43,10 @@ $scope.clearTask = function() {
 	$scope.setPriority = "";
 }
 
+$scope.completeTask = function(task) {
+	task.status = 'inactive';
+}
+
 }])
 
 blocItOff.controller('History.controller', ['$scope', function($scope) {

@@ -5,25 +5,21 @@
 </nav>
 <h1 id="addHeader">Add Tasks</h1>
 <div class="addContainer">
-	<table>
-		<thead>
-			<tr>
-				<th class="col-md-4" id="addTasksHeader">Tasks</th>
-				<th class="col-md-4" id="addTasksPriorityHeader">Priority</th>
-				<th class="col-md-4" id="addTasksStatusHeader">Status</th>
-			</tr>
-		</thead>
-		<tbody> 
-			<tr ng-repeat="task in tasks">
-				<td class="col-md-4" id="addTasksList">{{task.task}}</td>
-				<td class="col-md-4" id="addTasksPriorityList">{{task.priority}}</td>
-				<td class="col-md-4" id="addTasksStatusList">{{task.status}}</td>
-			</tr> 
-		</tbody>
+	<table class="col-md-4" id ="tasksTable">
+		<tr>
+			<th id="addTasksHeader">Tasks</th>
+			<th id="addTasksPriorityHeader">Priority</th>
+			<th id="addTasksStatusHeader">Status</th>
+		</tr>
+ 		<tr ng-repeat="task in tasks" id="tasksListRow">
+			<td id="addTasksList">{{task.task}}</td>
+			<td id="addTasksPriorityList">{{task.priority}}</td>
+			<td id="addTasksStatusList">{{task.status}}</td>  
+		</tr>
 	</table>
 	<form id="addTaskForm" ng-submit="addTask()">
 		<input type="text" placeholder="Enter task description here" id="addTaskInput" ng-model="newTask">
 		<input type="text" placeholder="Enter priority here: High/Mid/Low" id ="addTaskPriorityInput" ng-model="setPriority">
-		<input type="submit" id="addTaskSubmitButton"">
+		<input type="submit" id="addTaskSubmitButton">
 	</form>
 </div>

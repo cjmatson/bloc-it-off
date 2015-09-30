@@ -78,6 +78,11 @@ body {
 #taskHistory {
   color: white; }
 
+#tasksTable {
+  position: absolute;
+  top: 30%;
+  left: 34%; }
+
 #addTasksHeader {
   font-family: "Tahoma";
   color: white;
@@ -86,11 +91,10 @@ body {
   border-color: #F0BF00;
   text-align: center;
   text-shadow: 1px 1px #F0BF00;
-  position: absolute;
-  top: 30%;
-  left: 0%;
   width: 25%;
-  font-size: 20px; }
+  font-size: 20px;
+  position: absolute;
+  right: 140%; }
 
 #addTasksPriorityHeader {
   font-family: "Tahoma";
@@ -100,11 +104,10 @@ body {
   border-color: #F0BF00;
   text-align: center;
   text-shadow: 1px 1px #F0BF00;
-  position: absolute;
-  top: 30%;
-  left: 37.5%;
   width: 25%;
-  font-size: 20px; }
+  font-size: 20px;
+  position: absolute;
+  right: 40%; }
 
 #addTasksStatusHeader {
   font-family: "Tahoma";
@@ -114,38 +117,37 @@ body {
   border-color: #F0BF00;
   text-align: center;
   text-shadow: 1px 1px #F0BF00;
-  position: absolute;
-  top: 30%;
-  right: 0%;
   width: 25%;
-  font-size: 20px; }
+  font-size: 20px;
+  position: absolute;
+  left: 135%; }
 
 #addTasksList {
   font-family: "Tahoma";
-  position: absolute;
-  top: 40%;
-  left: 10%;
   color: white;
   font-size: 18px;
-  text-shadow: 0.5px 0.5px #F0BF00; }
+  text-shadow: 0.5px 0.5px #F0BF00;
+  position: relative;
+  right: 65%;
+  top: 50px; }
 
 #addTasksPriorityList {
   font-family: "Tahoma";
-  position: absolute;
-  top: 40%;
-  left: 47%;
   color: white;
   font-size: 18px;
-  text-shadow: 0.5px 0.5px #F0BF00; }
+  text-shadow: 0.5px 0.5px #F0BF00;
+  position: relative;
+  right: 10%;
+  top: 45px; }
 
 #addTasksStatusList {
   font-family: "Tahoma";
-  position: absolute;
-  top: 40%;
-  left: 84.5%;
-  color: white;
   font-size: 18px;
-  text-shadow: 0.5px 0.5px #F0BF00; }
+  color: white;
+  text-shadow: 0.5px 0.5px #F0BF00;
+  position: relative;
+  left: 75%;
+  top: 50px; }
 
 #addTasksNav {
   text-align: center; }
@@ -196,3 +198,14 @@ body {
   bottom: 5%;
   left: 26%;
   width: 25%; }
+
+#completeTaskButton {
+  border-color: #F0BF00;
+  background: white;
+  font-family: "Tahoma";
+  border-style: outset;
+  color: #3B0160;
+  text-shadow: 0.5px 0.5px #F0BF00;
+  position: absolute;
+  bottom: 5%;
+  left: 58%; }

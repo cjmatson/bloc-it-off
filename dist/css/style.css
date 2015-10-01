@@ -80,8 +80,8 @@ body {
 
 #tasksTable {
   position: absolute;
-  top: 30%;
-  left: 34%; }
+  top: 35%;
+  left: 35%; }
 
 #addTasksHeader {
   font-family: "Tahoma";
@@ -92,9 +92,7 @@ body {
   text-align: center;
   text-shadow: 1px 1px #F0BF00;
   width: 25%;
-  font-size: 20px;
-  position: absolute;
-  right: 140%; }
+  font-size: 20px; }
 
 #addTasksPriorityHeader {
   font-family: "Tahoma";
@@ -105,9 +103,7 @@ body {
   text-align: center;
   text-shadow: 1px 1px #F0BF00;
   width: 25%;
-  font-size: 20px;
-  position: absolute;
-  right: 40%; }
+  font-size: 20px; }
 
 #addTasksStatusHeader {
   font-family: "Tahoma";
@@ -118,36 +114,31 @@ body {
   text-align: center;
   text-shadow: 1px 1px #F0BF00;
   width: 25%;
-  font-size: 20px;
-  position: absolute;
-  left: 135%; }
+  font-size: 20px; }
 
 #addTasksList {
   font-family: "Tahoma";
   color: white;
   font-size: 18px;
   text-shadow: 0.5px 0.5px #F0BF00;
-  position: relative;
-  right: 65%;
-  top: 50px; }
+  border-style: outset;
+  border-color: #F0BF00; }
 
 #addTasksPriorityList {
   font-family: "Tahoma";
   color: white;
   font-size: 18px;
   text-shadow: 0.5px 0.5px #F0BF00;
-  position: relative;
-  right: 10%;
-  top: 45px; }
+  border-style: outset;
+  border-color: #F0BF00; }
 
 #addTasksStatusList {
   font-family: "Tahoma";
   font-size: 18px;
   color: white;
   text-shadow: 0.5px 0.5px #F0BF00;
-  position: relative;
-  left: 75%;
-  top: 50px; }
+  border-style: outset;
+  border-color: #F0BF00; }
 
 #addTasksNav {
   text-align: center; }
@@ -205,7 +196,4 @@ body {
   font-family: "Tahoma";
   border-style: outset;
   color: #3B0160;
-  text-shadow: 0.5px 0.5px #F0BF00;
-  position: absolute;
-  bottom: 5%;
-  left: 58%; }
+  text-shadow: 0.5px 0.5px #F0BF00; }

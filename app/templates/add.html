@@ -14,7 +14,12 @@
  		<tr ng-repeat="task in tasks" id="tasksListRow">
 			<td id="addTasksList">{{task.task}}</td>
 			<td id="addTasksPriorityList">{{task.priority}}</td>
-			<td id="addTasksStatusList">{{task.status}}</td>  
+			<td id="addTasksStatusList">{{task.status}}</td>
+			<td>  
+				<form ng-submit="completeTask(task)">  
+					<button type="submit" id="completeTaskButton">Complete Task</button>  
+				</form>   
+			</td>     
 		</tr>
 	</table>
 	<form id="addTaskForm" ng-submit="addTask()">

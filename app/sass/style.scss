@@ -91,8 +91,8 @@ body {
 
 #tasksTable {
 	position: absolute;
-	top: 30%;
-	left: 34%;
+	top: 35%;
+	left: 35%;
 }
 
 #addTasksHeader {
@@ -105,8 +105,6 @@ body {
 	text-shadow: 1px 1px #F0BF00;
 	width: 25%;
 	font-size: 20px;
-	position: absolute;
-	right: 140%;
 }
 
 #addTasksPriorityHeader {
@@ -119,8 +117,6 @@ body {
 	text-shadow: 1px 1px #F0BF00;
 	width: 25%;
 	font-size: 20px;
-	position: absolute;
-	right: 40%;
 }
 
 #addTasksStatusHeader {
@@ -133,8 +129,6 @@ body {
 	text-shadow: 1px 1px #F0BF00;
 	width: 25%;
 	font-size: 20px;
-	position: absolute;
-	left: 135%;
 }
 
 #addTasksList {
@@ -142,9 +136,8 @@ body {
 	color: white;
 	font-size: 18px;
 	text-shadow: 0.5px 0.5px #F0BF00;
-	position: relative;
-	right: 65%;
-	top: 50px;
+	border-style: outset;
+	border-color: #F0BF00;
 }
 
 #addTasksPriorityList {
@@ -152,9 +145,8 @@ body {
 	color: white;
 	font-size: 18px;
 	text-shadow: 0.5px 0.5px #F0BF00;
-	position: relative;
-	right: 10%;
-	top: 45px;
+	border-style: outset;
+	border-color: #F0BF00;
 }
 
 #addTasksStatusList {
@@ -162,9 +154,8 @@ body {
 	font-size: 18px;
 	color: white;
 	text-shadow: 0.5px 0.5px #F0BF00;
-	position: relative;
-	left: 75%;
-	top: 50px;
+	border-style: outset;
+	border-color: #F0BF00;
 }
 
 #addTasksNav {
@@ -231,8 +222,4 @@ body {
 	border-style: outset;
 	color: #3B0160;
 	text-shadow: 0.5px 0.5px #F0BF00;
-	position: absolute;
-	bottom: 5%;
-	left: 58%;
-
 }

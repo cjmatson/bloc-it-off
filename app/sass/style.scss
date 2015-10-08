@@ -90,7 +90,8 @@ body {
 }
 
 #tasksTable {
-	width: 100%;
+	table-layout: fixed;
+	width: 80%;
 	position: absolute;
 	top: 35%;
 	left: 10%;
@@ -104,8 +105,8 @@ body {
 	border-color: #F0BF00;
 	text-align: center;
 	text-shadow: 1px 1px #F0BF00;
-	width: 25%;
 	font-size: 20px;
+	width: 100%
 }
 
 #addTasksPriorityHeader {
@@ -116,8 +117,8 @@ body {
 	border-color: #F0BF00;
 	text-align: center;
 	text-shadow: 1px 1px #F0BF00;
-	width: 25%;
 	font-size: 20px;
+	width: 100%;
 }
 
 #addTasksStatusHeader {
@@ -128,8 +129,8 @@ body {
 	border-color: #F0BF00;
 	text-align: center;
 	text-shadow: 1px 1px #F0BF00;
-	width: 25%;
 	font-size: 20px;
+	width: 100%;
 }
 
 #addTasksList {
@@ -140,6 +141,8 @@ body {
 	border-style: outset;
 	border-color: #F0BF00;
 	text-align: center;
+	font-size: 20px;
+	width: 100%;
 }
 
 #addTasksPriorityList {
@@ -150,6 +153,8 @@ body {
 	border-style: outset;
 	border-color: #F0BF00;
 	text-align: center;
+	font-size: 20px;
+	width: 100%;
 }
 
 #addTasksStatusList {
@@ -160,10 +165,19 @@ body {
 	border-style: outset;
 	border-color: #F0BF00;
 	text-align: center;
+	width: 100%;
+	font-size: 20px;
 }
 
-#addTasksNav {
+.tasksNav {
 	text-align: center;
+}
+
+#addTasksLink {
+	color: #F0BF00;
+	font-family: "Tahoma";
+	font-size: 20px;
+	text-shadow: 0.5px 0.5px white;
 }
 
 #addTasksHomeLink {
@@ -195,8 +209,8 @@ body {
 	color: #3B0160;
 	text-shadow: 0.5px 0.5px #F0BF00;
 	position: absolute;
-	bottom: 5%;
-	left: 52%;
+	bottom: 45%;
+	left: 47.5%;
 }
 
 #addTaskInput {
@@ -204,8 +218,8 @@ body {
 	color: #3B0160;
 	text-shadow: 0.5px 0.5px #F0BF00;
 	position: absolute;
-	bottom: 5%;
-	left: 0%;
+	bottom: 45%;
+	left: 20%;
 	width: 25%;
 }
 
@@ -214,8 +228,8 @@ body {
 	color: #3B0160;
 	text-shadow: 0.5px 0.5px #F0BF00;
 	position: absolute; 
-	bottom: 5%;
-	left: 26%;
+	bottom: 45%;
+	left: 55%;
 	width: 25%;
 }
 

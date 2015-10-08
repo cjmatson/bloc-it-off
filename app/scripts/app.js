@@ -24,36 +24,53 @@ blocItOff.config(['$stateProvider', '$locationProvider', function($stateProvider
 	})
 }])
 
-blocItOff.controller('Current.controller', ['$scope', function($scope) {
-
+blocItOff.controller('Current.controller', ['$scope', 'ActiveTasks', function($scope, ActiveTasks) {
+	$scope.tasks = ActiveTasks.all;
 }])
 
-blocItOff.controller('Add.controller', ['$scope', '$firebaseArray', function($scope, $firebaseArray) {
-var ref = new Firebase('https://torching-sun-5361.firebaseio.com/');
-$scope.tasks = $firebaseArray(ref.child('tasks'));
-$scope.addTask = function() {
-	if ($scope.newTask && $scope.setPriority) {
-		$scope.task = {task: $scope.newTask, priority: $scope.setPriority, status: 'Active'};
-		$scope.tasks.$add($scope.task);
-		$scope.clearTask();
+blocItOff.controller('Add.controller', ['$scope', 'ActiveTasks', function($scope, ActiveTasks) {
+	$scope.addTask = function() {
+		if ($scope.newTask && $scope.setPriority) {
+			$scope.task = {task: $scope.newTask, priority: $scope.setPriority, status: 'Active'};
+			ActiveTasks.submit($scope.task);
+			$scope.clearInputs();
+		}
 	}
-}
-$scope.clearTask = function() {
-	$scope.newTask = "";
-	$scope.setPriority = "";
-}
+	$scope.clearInputs = function() {
+		$scope.newTask = "";
+		$scope.setPriority = "";
+	}
+}])
 
-$scope.completeTask = function(task) {
-	task.status = 'Inactive';
-}
+blocItOff.controller('History.controller', ['$scope', 'ActiveTasks', function($scope, ActiveTasks) {
 
 }])
 
-blocItOff.controller('History.controller', ['$scope', function($scope) {
+blocItOff.controller('Home.controller', ['$scope', 'ActiveTasks', function($scope, ActiveTasks) {
 
 }])
 
-blocItOff.controller('Home.controller', ['$scope', function($scope) {
+blocItOff.filter('findActiveTasks', function() {
+	return function(tasks) {
+		var activeTasks = [];
+		for (var i = 0; i < tasks.length; i++) {
+			if (tasks[i].status = 'Active') {
+				activeTasks.push(tasks[i]);
+			}
+		}
+		return activeTasks;
+	}
+})
+
+blocItOff.factory('ActiveTasks', ['$firebaseArray', function($firebaseArray) {
+	var ref = new Firebase('https://torching-sun-5361.firebaseio.com/');
+	var tasks = $firebaseArray(ref.child('active tasks'));
+	return {
+		all: tasks,
+		submit: function(newActiveTask) {
+			tasks.$add(newActiveTask);
+		}
+	}
 
 }])
 

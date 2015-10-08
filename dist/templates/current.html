@@ -1,1 +1,24 @@
+<nav class="tasksNav">
+	<a class="col-md-4" id="addTasksHomeLink" ui-sref="home">— Home —</a>
+	<a class="col-md-4" id="addTasksLink" ui-sref="add">— Add Tasks —</a>  
+	<a class="col-md-4" id="addTasksHistoryLink" ui-sref="history">— Task History —</a>
+</nav>
 <h1 id="currentHeader">Current Tasks</h1>
+<div class="currentContainer">
+	<table class="col-md-4" id="tasksTable">
+		<tr>
+			<th id="addTasksHeader">Tasks</th>
+			<th id="addTasksPriorityHeader">Priority</th>
+			<th id="addTasksStatusHeader">Status</th>
+		</tr>
+ 		<tr ng-repeat="task in tasks | filter: {status: 'Active'}:true" id="tasksListRow">
+			<td id="addTasksList">{{task.task}}</td>
+			<td id="addTasksPriorityList">{{task.priority}}</td>
+			<td id="addTasksStatusList">{{task.status}}</td>
+			<td>  
+				<form ng-submit="completeTask(myTask)">  
+					<button type="submit" id="completeTaskButton">Complete Task</button>  
+				</form>   
+			</td>     
+		</tr>
+	</table>
